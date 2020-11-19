@@ -1,5 +1,5 @@
 # 2-state HMM for locating G-C Content
 
-# Data
+## Data
 
-# How to run
+## How to run
