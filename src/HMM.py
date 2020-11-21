@@ -80,7 +80,7 @@ class HMM:
         self.seq = np.array(list(seq.upper()))
         self.seq_idx = np.array(convert_seq_to_idx(self.seq))
     
-    def forward(self):
+    def viterbi(self):
         # initialize
         self.viterbi_trellis = np.zeros((2, len(self.seq)))
         self.viterbi_trellis[0][0] = self.start_logproba[0] + self.emit_logproba[0][self.seq_idx[0]]
