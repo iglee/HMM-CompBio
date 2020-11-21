@@ -41,14 +41,14 @@ class HMM:
     def forward(self):
         # initialize
         self.viterbi_trellis = np.zeros((2, len(self.seq)))
-        self.viterbi_trellis[0][0] = self.start_logproba[0] + self.emit_logproba[0][h.seq_idx[0]]
-        self.viterbi_trellis[1][0] = self.start_logproba[1] + self.emit_logproba[1][h.seq_idx[0]]
+        self.viterbi_trellis[0][0] = self.start_logproba[0] + self.emit_logproba[0][self.seq_idx[0]]
+        self.viterbi_trellis[1][0] = self.start_logproba[1] + self.emit_logproba[1][self.seq_idx[0]]
         
         # iterate and calculate log proba for each cell of trellis
-        for i in range(1,len(h.seq_idx)): # i = seq
+        for i in range(1,len(self.seq_idx)): # i = seq
             for j in range(2): # j = state
-                h.viterbi_trellis[j][i] = h.emit_logproba[j][h.seq_idx[i]] + max(h.viterbi_trellis[0][i-1]+h.trans_logproba[0][j], h.viterbi_trellis[1][i-1]+h.trans_logproba[1][j])
-                #print(h.trans_logproba[0][j], h.trans_logproba[1][j])
+                self.viterbi_trellis[j][i] = self.emit_logproba[j][self.seq_idx[i]] + max(self.viterbi_trellis[0][i-1]+self.trans_logproba[0][j], self.viterbi_trellis[1][i-1]+self.trans_logproba[1][j])
+                #print(self.trans_logproba[0][j], self.trans_logproba[1][j])
 
     def backtrace(self):
         return None
