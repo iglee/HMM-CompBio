@@ -51,4 +51,14 @@ class HMM:
                 #print(self.trans_logproba[0][j], self.trans_logproba[1][j])
 
     def backtrace(self):
-        return None
+        # reverse the trellis
+        trellis_reversed = self.viterbi_trellis[:,::-1]
+        temp = trellis_reversed[:,0].argmax()
+        path = [ temp ]
+
+        for i in range(1,trellis_reversed.shape[1]):
+            if trellis_reversed[int(not temp),i] > trellis_reversed[temp,i]:
+                temp = int(not temp)
+            path.append(temp)
+        
+        return path[::-1]
