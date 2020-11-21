@@ -10,6 +10,10 @@ IDX_TO_NUC = dict(zip(range(4),["A","C","G","T"]))
 def convert_seq_to_idx(seq):
     return [NUC_TO_IDX[x] for x in seq]
 
+
+
+
+# organize input data into a class
 class GenomeData:
     def __init__(self):
         self.seq_name = None
@@ -37,6 +41,10 @@ def read_fna(filename):
     
     return input_data
 
+
+
+
+# HMM model
 class HMM:
     def __init__(self):
         # sequence data
