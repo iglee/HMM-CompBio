@@ -10,8 +10,32 @@ IDX_TO_NUC = dict(zip(range(4),["A","C","G","T"]))
 def convert_seq_to_idx(seq):
     return [NUC_TO_IDX[x] for x in seq]
 
+class GenomeData:
+    def __init__(self):
+        self.seq_name = None
+        self.sequence = ""
+        self.seq_len = 0
+
 def read_fna(filename):
-    return None
+    f = open(filename, "r")
+    lines = f.readlines()
+    f.close()
+
+    input_data = []
+
+    for l in lines:
+        if l[0] == ">":
+            try:
+                g.seq_len = len(g.sequence)
+                input_data.append(g)
+            except:
+                pass
+            g = GenomeData()
+            g.seq_name = l.strip()
+        else:
+            g.sequence = g.sequence + l.strip().upper()
+    
+    return input_data
 
 class HMM:
     def __init__(self):
@@ -33,6 +57,16 @@ class HMM:
 
         # trellis
         self.viterbi_trellis = None
+
+    def update_proba(self, emit_proba, trans_proba):
+        # update emit proba
+        self.emit_proba = emit_proba
+        self.emit_logproba = log(emit_proba)
+
+        # update transmit proba
+        self.trans_proba = trans_proba
+        self.trans_logproba = log(trans_proba)
+
 
     def input_sequence(self, seq):
         self.seq = np.array(list(seq.upper()))
