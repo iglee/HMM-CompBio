@@ -4,7 +4,6 @@ import numpy as np
 from numpy import log
 
 # global variables
-# global variables
 NUC_TO_IDX = dict(zip(["A","C","G","T"],range(4)))
 IDX_TO_NUC = dict(zip(range(4),["A","C","G","T"]))
 
@@ -48,8 +47,8 @@ class HMM:
         # iterate and calculate log proba for each cell of trellis
         for i in range(1,len(h.seq_idx)): # i = seq
             for j in range(2): # j = state
-                h.viterbi_trellis[j][i] = h.emit_logproba[j][h.seq_idx[i]] + max(h.viterbi_trellis[j][i-1]+h.trans_logproba[0][j], h.viterbi_trellis[j][i-1]+h.trans_logproba[1][j])
-
+                h.viterbi_trellis[j][i] = h.emit_logproba[j][h.seq_idx[i]] + max(h.viterbi_trellis[0][i-1]+h.trans_logproba[0][j], h.viterbi_trellis[1][i-1]+h.trans_logproba[1][j])
+                #print(h.trans_logproba[0][j], h.trans_logproba[1][j])
 
     def backtrace(self):
         return None
