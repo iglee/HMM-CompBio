@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from numpy import log
 import re
+import itertools
 from tabulate import tabulate
 
 # global variables
@@ -74,6 +75,7 @@ class HMM:
         self.path = None
         self.hits = None
         self.intervals = None
+        self.k = 5 # number of hits to consider for training
 
     def update_proba(self, emit_proba, trans_proba):
         # update emit proba
@@ -92,7 +94,7 @@ class HMM:
     def viterbi(self):
         # initialize
         self.viterbi_trellis = np.zeros((2, len(self.seq)))
-        self.states = np.zeros((2, len(self.seq)))
+        self.states = np.zeros((2, len(self.seq))) # track prev states in each cell of the array. with first prev state = 0 (will not be used)
         
         self.viterbi_trellis[0][0] = self.start_logproba[0] + self.emit_logproba[0][self.seq_idx[0]]
         self.viterbi_trellis[1][0] = self.start_logproba[1] + self.emit_logproba[1][self.seq_idx[0]]
@@ -116,17 +118,22 @@ class HMM:
             path.append(last_max)
 
         self.path = np.array(path[::-1])
-        self.hits = np.where(self.path == 1)[0]
+        self.hits = np.where(self.path == 1)[0] # record the index of states
+        self.find_hit_sequences(self.hits)
 
-    def find_intervals(self):
-        return None
+    def find_hit_sequences(self, hit_locations):
+        hit_intervals = []
+        for _, group in itertools.groupby(enumerate(hit_locations), key=lambda x: x[1]-x[0]):
+            group = list(group)
+            hit_intervals.append((group[0][1],group[-1][1]))
+        self.intervals = hit_intervals
 
     def print_report(self):
         # print emission probabilities
         emit_table = [list(self.emit_proba[0]), list(self.emit_proba[1])]
         emit_table[0].insert(0, "State 1")
         emit_table[1].insert(0, "State 2")
-        print("\n\nEmission probabilities:\n")
+        print("\nEmission probabilities:\n")
         print(tabulate(emit_table, headers=['A', 'C', 'G', 'T']))
 
         # print transmission probabilities
@@ -141,7 +148,15 @@ class HMM:
         print("\n\nLog probability of the viterbi path: ", logproba_path)
 
         # print total number of hits
+        print("\n\nTotal number of hits: ", len(self.intervals))
 
         # print length and locations of first k hits
-
+        k_intervals = self.intervals[:self.k]
+        print("\n\nLengths and locations of first {} hits".format(self.k))
+        for x in k_intervals:
+            print("Interval location: ", x)
+            print("Interval length: ", x[1]-x[0])
+            print("\n")
+        
+        print("\n\n\n")
 
