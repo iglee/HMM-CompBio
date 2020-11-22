@@ -126,20 +126,22 @@ class HMM:
         emit_table = [list(self.emit_proba[0]), list(self.emit_proba[1])]
         emit_table[0].insert(0, "State 1")
         emit_table[1].insert(0, "State 2")
+        print("\n\nEmission probabilities:\n")
         print(tabulate(emit_table, headers=['A', 'C', 'G', 'T']))
 
         # print transmission probabilities
         transmit_table = [list(self.trans_proba[0]), list(self.trans_proba[1])]
         transmit_table[0].insert(0, "State 1")
         transmit_table[1].insert(0, "State 2")
-        print(tabulate(transmit_table, headers=['A', 'C', 'G', 'T']))
+        print("\n\nTransmission probabilities:\n")
+        print(tabulate(transmit_table, headers=["State 1", "State 2"]))
 
         # print log probability of viterbi path
-        logproba_path = self.viterbi_trellis[:,-1].argmax()
-        print("Log probability of the viterbi path: ", logproba_path)
+        logproba_path = self.viterbi_trellis[:,-1].max()
+        print("\n\nLog probability of the viterbi path: ", logproba_path)
 
         # print total number of hits
 
         # print length and locations of first k hits
 
-        return None
+
