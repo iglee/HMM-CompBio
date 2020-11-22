@@ -39,6 +39,8 @@ def read_fna(filename):
             g.seq_name = l.strip()
         else:
             g.sequence = g.sequence + re.sub(r"((?:(?!A|C|T|G)\S))","T",l.strip().upper())
+
+    input_data.append(g)
     
     return input_data
 
