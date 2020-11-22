@@ -103,29 +103,12 @@ class HMM:
 
 
     def backtrace(self):
-
         last_max = self.viterbi_trellis[:,-1].argmax()
         path = [ last_max ]
 
         for i in range(self.states.shape[1]-1, 0, -1):
-
             last_max = int(self.states[last_max][i])
             path.append(last_max)
         return path[::-1]
 
 
-
-
-
-
-        # reverse the trellis
-        trellis_reversed = self.viterbi_trellis[:,::-1]
-        temp = trellis_reversed[:,0].argmax()
-        path = [ temp ]
-
-        for i in range(1,trellis_reversed.shape[1]):
-            if trellis_reversed[int(not temp),i] > trellis_reversed[temp,i]:
-                temp = int(not temp)
-            path.append(temp)
-        
-        return path[::-1]
