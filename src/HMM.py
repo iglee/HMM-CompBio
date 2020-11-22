@@ -41,7 +41,7 @@ def read_fna(filename):
             g.sequence = g.sequence + re.sub(r"((?:(?!A|C|T|G)\S))","T",l.strip().upper())
 
     input_data.append(g)
-    
+
     return input_data
 
 
@@ -103,6 +103,21 @@ class HMM:
 
 
     def backtrace(self):
+
+        last_max = self.viterbi_trellis[:,-1].argmax()
+        path = [ last_max ]
+
+        for i in range(self.states.shape[1]-1, 0, -1):
+
+            last_max = int(self.states[last_max][i])
+            path.append(last_max)
+        return path[::-1]
+
+
+
+
+
+
         # reverse the trellis
         trellis_reversed = self.viterbi_trellis[:,::-1]
         temp = trellis_reversed[:,0].argmax()
