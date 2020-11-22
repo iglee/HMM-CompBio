@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 from numpy import log
+import re
 
 # global variables
 NUC_TO_IDX = dict(zip(["A","C","G","T"],range(4)))
@@ -37,7 +38,7 @@ def read_fna(filename):
             g = GenomeData()
             g.seq_name = l.strip()
         else:
-            g.sequence = g.sequence + l.strip().upper()
+            g.sequence = g.sequence + re.sub(r"((?:(?!A|C|T|G)\S))","T",l.strip().upper())
     
     return input_data
 

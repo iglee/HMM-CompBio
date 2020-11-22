@@ -14,7 +14,7 @@ input_data = read_fna(args.input_file)
 
 # load model
 h = HMM()
-h.input_sequence(input_data[0].sequence[:k])
+h.input_sequence(input_data[0].sequence)
 h.viterbi()
 path = h.backtrace()
 print(path)
