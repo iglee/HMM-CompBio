@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from numpy import log
 import re
+from tabulate import tabulate
 
 # global variables
 NUC_TO_IDX = dict(zip(["A","C","G","T"],range(4)))
@@ -10,8 +11,6 @@ IDX_TO_NUC = dict(zip(range(4),["A","C","G","T"]))
 
 def convert_seq_to_idx(seq):
     return [NUC_TO_IDX[x] for x in seq]
-
-
 
 
 # organize input data into a class
@@ -40,6 +39,7 @@ def read_fna(filename):
         else:
             g.sequence = g.sequence + re.sub(r"((?:(?!A|C|T|G)\S))","T",l.strip().upper())
 
+    g.seq_len = len(g.sequence)
     input_data.append(g)
 
     return input_data
@@ -69,6 +69,11 @@ class HMM:
         # trellis
         self.viterbi_trellis = None
         self.states = None
+
+        # optimal path
+        self.path = None
+        self.hits = None
+        self.intervals = None
 
     def update_proba(self, emit_proba, trans_proba):
         # update emit proba
@@ -109,6 +114,32 @@ class HMM:
         for i in range(self.states.shape[1]-1, 0, -1):
             last_max = int(self.states[last_max][i])
             path.append(last_max)
-        return path[::-1]
 
+        self.path = np.array(path[::-1])
+        self.hits = np.where(self.path == 1)[0]
 
+    def find_intervals(self):
+        return None
+
+    def print_report(self):
+        # print emission probabilities
+        emit_table = [list(self.emit_proba[0]), list(self.emit_proba[1])]
+        emit_table[0].insert(0, "State 1")
+        emit_table[1].insert(0, "State 2")
+        print(tabulate(emit_table, headers=['A', 'C', 'G', 'T']))
+
+        # print transmission probabilities
+        transmit_table = [list(self.trans_proba[0]), list(self.trans_proba[1])]
+        transmit_table[0].insert(0, "State 1")
+        transmit_table[1].insert(0, "State 2")
+        print(tabulate(transmit_table, headers=['A', 'C', 'G', 'T']))
+
+        # print log probability of viterbi path
+        logproba_path = self.viterbi_trellis[:,-1].argmax()
+        print("Log probability of the viterbi path: ", logproba_path)
+
+        # print total number of hits
+
+        # print length and locations of first k hits
+
+        return None
