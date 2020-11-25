@@ -1,0 +1,516 @@
+#########################
+ Training Iteration 1: 
+#########################
+
+Emission probabilities:
+
+            A     C     G     T
+-------  ----  ----  ----  ----
+State 1  0.25  0.25  0.25  0.25
+State 2  0.2   0.3   0.3   0.2
+
+
+Transmission probabilities:
+
+           State 1    State 2
+-------  ---------  ---------
+State 1     0.9999     0.0001
+State 2     0.01       0.99
+
+
+Log probability of the viterbi path:  -2308117.250520281
+
+
+Total number of hits:  2
+
+
+Lengths and locations of first 5 hits
+Interval location:  (154650, 159578)
+Interval length:  4928
+
+
+Interval location:  (638463, 643446)
+Interval length:  4983
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 2: 
+#########################
+
+Emission probabilities:
+
+                A         C         G         T
+-------  --------  --------  --------  --------
+State 1  0.345353  0.154403  0.157978  0.342266
+State 2  0.186624  0.314637  0.31383   0.184909
+
+
+Transmission probabilities:
+
+             State 1      State 2
+-------  -----------  -----------
+State 1  0.999998     2.41684e-06
+State 2  0.000403511  0.999596
+
+
+Log probability of the viterbi path:  -2188028.5779632074
+
+
+Total number of hits:  26
+
+
+Lengths and locations of first 5 hits
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+Interval location:  (118078, 118178)
+Interval length:  100
+
+
+Interval location:  (138344, 138418)
+Interval length:  74
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 3: 
+#########################
+
+Emission probabilities:
+
+                A         C         G         T
+-------  --------  --------  --------  --------
+State 1  0.34577   0.154003  0.157564  0.342663
+State 2  0.187387  0.311426  0.313591  0.187596
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.999968    3.15027e-05
+State 2  0.00363179  0.996368
+
+
+Log probability of the viterbi path:  -2187967.0733034066
+
+
+Total number of hits:  39
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 4: 
+#########################
+
+Emission probabilities:
+
+                A         C         G         T
+-------  --------  --------  --------  --------
+State 1  0.345857  0.153915  0.157461  0.342767
+State 2  0.186791  0.31222   0.315977  0.185012
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.999953    4.72785e-05
+State 2  0.00514105  0.994859
+
+
+Log probability of the viterbi path:  -2187984.8501005615
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 5: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 6: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 7: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 8: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 9: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
+
+
+#########################
+ Training Iteration 10: 
+#########################
+
+Emission probabilities:
+
+                A         C         G        T
+-------  --------  --------  --------  -------
+State 1  0.345871  0.153913  0.157436  0.34278
+State 2  0.186654  0.311091  0.317365  0.18489
+
+
+Transmission probabilities:
+
+            State 1      State 2
+-------  ----------  -----------
+State 1  0.99995     4.97069e-05
+State 2  0.00535913  0.994641
+
+
+Log probability of the viterbi path:  -2187988.3613932496
+
+
+Total number of hits:  41
+
+
+Lengths and locations of first 5 hits
+Interval location:  (13524, 13665)
+Interval length:  141
+
+
+Interval location:  (37389, 37643)
+Interval length:  254
+
+
+Interval location:  (97325, 97540)
+Interval length:  215
+
+
+Interval location:  (97626, 97822)
+Interval length:  196
+
+
+Interval location:  (111763, 111855)
+Interval length:  92
+
+
+
+
+
+
