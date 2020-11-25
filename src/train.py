@@ -1,7 +1,9 @@
 from HMM import read_fna, GenomeData, HMM
 from viterbi_train import vt_train
+from test import match
 import numpy as np
 import argparse
+import pandas as pd
 
 
 N = 10 # total number of iteration for training
@@ -12,6 +14,7 @@ k = 5
 parser = argparse.ArgumentParser(description = "train HMM on an input dataset")
 parser.add_argument("-fi", action="store", help="input dataset file")
 parser.add_argument("-fo", action="store", help="output file for report")
+parser.add_argument("-gt", action="store", help="golden test set")
 args = parser.parse_args()
 
 # input file
@@ -36,5 +39,29 @@ for i in range(1,N):
     print("\n\n#########################\n Training Iteration {}: \n#########################".format(i+1))
     h.print_report(out_file)
 
+
+# evaluation on the final model
+df=pd.read_csv(args.gt, sep="\t", skiprows=9, header = None) # golden dataset
+print("Evaluating against a golden dataset...\n\n")
+print("Evaluating against a golden dataset...\n\n", file = out_file)
+for x in h.intervals:
+    print("matches for intervals {}".format(x))
+    print("matches for intervals {}".format(x), file = out_file)
+    for row in df.iterrows():
+        
+        try:
+            y = (int(row[1][3])-1, int(row[1][3])-1)
+            if match(x,y):
+                
+                print(row[0], row[1][8])
+                print(row[0], row[1][8], file = out_file)
+        except:
+            #print("can't match, bad input",row[0])
+            pass
+            
+    print("###\n")
+    print("###\n", file = out_file)
+    
+    
 out_file.close()
 
