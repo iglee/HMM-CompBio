@@ -2,7 +2,6 @@ from HMM import read_fna, GenomeData, HMM
 from viterbi_train import vt_train
 import numpy as np
 import argparse
-from itertools import permutations
 
 
 N = 10 # total number of iteration for training
