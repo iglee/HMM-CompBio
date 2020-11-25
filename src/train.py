@@ -47,14 +47,14 @@ print("Evaluating against a golden dataset...\n\n", file = out_file)
 for x in h.intervals:
     print("matches for intervals {}".format(x))
     print("matches for intervals {}".format(x), file = out_file)
-    for row in df.iterrows():
+    for row in df[1:].iterrows():
         
         try:
-            y = (int(row[1][3])-1, int(row[1][3])-1)
+            y = (int(row[1][3])-1, int(row[1][4])-1)
             if match(x,y):
                 
-                print(row[0], row[1][8])
-                print(row[0], row[1][8], file = out_file)
+                print(row[0], y, row[1][8])
+                print(row[0], y, row[1][8], file = out_file)
         except:
             #print("can't match, bad input",row[0])
             pass
