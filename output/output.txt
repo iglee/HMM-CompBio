@@ -514,3 +514,253 @@ Interval length:  92
 
 
 
+Evaluating against a golden dataset...
+
+
+matches for intervals (13524, 13665)
+###
+
+matches for intervals (37389, 37643)
+74 ID=gene-MJ_RS00180;Dbxref=GeneID:1450874;Name=MJ_RS00180;gbkey=Gene;gene_biotype=protein_coding;locus_tag=MJ_RS00180;old_locus_tag=MJ0036%2CMJ_0036
+75 ID=cds-WP_010869527.1;Parent=gene-MJ_RS00180;Dbxref=Genbank:WP_010869527.1,GeneID:1450874;Name=WP_010869527.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_012980533.1;locus_tag=MJ_RS00180;product=30S ribosomal protein S15;protein_id=WP_010869527.1;transl_table=11
+3767 ID=gene-MJ_RS09125;Dbxref=GeneID:1450787;Name=MJ_RS09125;gbkey=Gene;gene_biotype=protein_coding;locus_tag=MJ_RS09125;old_locus_tag=MJ_ECL31%2CMJECL31
+3768 ID=cds-WP_064496999.1;Parent=gene-MJ_RS09125;Dbxref=Genbank:WP_064496999.1,GeneID:1450787;Name=WP_064496999.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_014013248.1;locus_tag=MJ_RS09125;product=antitoxin family protein;protein_id=WP_064496999.1;transl_table=11
+###
+
+matches for intervals (97325, 97540)
+210 ID=gene-MJ_RS00515;Dbxref=GeneID:1450942;Name=MJ_RS00515;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS00515;old_locus_tag=MJ_t01%2CMJt01%2CtRNA-Met-1
+211 ID=rna-MJ_RS00515;Parent=gene-MJ_RS00515;Dbxref=GeneID:1450942;anticodon=(pos:complement(97501..97503));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00515;product=tRNA-Met
+212 ID=exon-MJ_RS00515-1;Parent=rna-MJ_RS00515;Dbxref=GeneID:1450942;anticodon=(pos:complement(97501..97503));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00515;product=tRNA-Met
+213 ID=exon-MJ_RS00515-2;Parent=rna-MJ_RS00515;Dbxref=GeneID:1450942;anticodon=(pos:complement(97501..97503));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00515;product=tRNA-Met
+###
+
+matches for intervals (97626, 97822)
+214 ID=gene-MJ_RS00520;Dbxref=GeneID:1450943;Name=MJ_RS00520;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS00520;old_locus_tag=MJ_t02%2CMJt02%2CtRNA-Leu-1
+215 ID=rna-MJ_RS00520;Parent=gene-MJ_RS00520;Dbxref=GeneID:1450943;anticodon=(pos:97665..97667);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00520;product=tRNA-Leu
+216 ID=exon-MJ_RS00520-1;Parent=rna-MJ_RS00520;Dbxref=GeneID:1450943;anticodon=(pos:97665..97667);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00520;product=tRNA-Leu
+###
+
+matches for intervals (111763, 111855)
+239 ID=gene-MJ_RS00580;Dbxref=GeneID:1450955;Name=MJ_RS00580;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS00580;old_locus_tag=MJ_t03%2CMJt03%2CtRNA-SeC-1
+240 ID=rna-MJ_RS00580;Parent=gene-MJ_RS00580;Dbxref=GeneID:1450955;anticodon=(pos:111803..111805);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00580;product=tRNA-Sec
+241 ID=exon-MJ_RS00580-1;Parent=rna-MJ_RS00580;Dbxref=GeneID:1450955;anticodon=(pos:111803..111805);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00580;product=tRNA-Sec
+###
+
+matches for intervals (118078, 118178)
+###
+
+matches for intervals (138344, 138418)
+###
+
+matches for intervals (154609, 157696)
+340 ID=gene-MJ_RS00815;Dbxref=GeneID:1451001;Name=MJ_RS00815;gbkey=Gene;gene_biotype=rRNA;locus_tag=MJ_RS00815;old_locus_tag=MJ_r01%2CMJr01%2CMJrrnA23S
+341 ID=rna-MJ_RS00815;Parent=gene-MJ_RS00815;Dbxref=GeneID:1451001;gbkey=rRNA;locus_tag=MJ_RS00815;product=23S ribosomal RNA
+342 ID=exon-MJ_RS00815-1;Parent=rna-MJ_RS00815;Dbxref=GeneID:1451001;gbkey=rRNA;locus_tag=MJ_RS00815;product=23S ribosomal RNA
+###
+
+matches for intervals (157781, 159590)
+343 ID=gene-MJ_RS00820;Dbxref=GeneID:1451002;Name=MJ_RS00820;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS00820;old_locus_tag=MJ_t05%2CMJt05%2CtRNA-Ala-1
+344 ID=rna-MJ_RS00820;Parent=gene-MJ_RS00820;Dbxref=GeneID:1451002;anticodon=(pos:complement(157884..157886));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00820;product=tRNA-Ala
+345 ID=exon-MJ_RS00820-1;Parent=rna-MJ_RS00820;Dbxref=GeneID:1451002;anticodon=(pos:complement(157884..157886));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00820;product=tRNA-Ala
+346 ID=gene-MJ_RS00825;Dbxref=GeneID:1451003;Name=MJ_RS00825;gbkey=Gene;gene_biotype=rRNA;locus_tag=MJ_RS00825;old_locus_tag=MJ_r02%2CMJr02%2CMJrrnA16S
+347 ID=rna-MJ_RS00825;Parent=gene-MJ_RS00825;Dbxref=GeneID:1451003;gbkey=rRNA;locus_tag=MJ_RS00825;product=16S ribosomal RNA
+348 ID=exon-MJ_RS00825-1;Parent=rna-MJ_RS00825;Dbxref=GeneID:1451003;gbkey=rRNA;locus_tag=MJ_RS00825;product=16S ribosomal RNA
+###
+
+matches for intervals (186973, 187066)
+411 ID=gene-MJ_RS00980;Dbxref=GeneID:1451036;Name=MJ_RS00980;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS00980;old_locus_tag=MJ_t06%2CMJt06%2CtRNA-Ser-1
+412 ID=rna-MJ_RS00980;Parent=gene-MJ_RS00980;Dbxref=GeneID:1451036;anticodon=(pos:187013..187015);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00980;product=tRNA-Ser
+413 ID=exon-MJ_RS00980-1;Parent=rna-MJ_RS00980;Dbxref=GeneID:1451036;anticodon=(pos:187013..187015);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS00980;product=tRNA-Ser
+###
+
+matches for intervals (190830, 190906)
+430 ID=gene-MJ_RS01025;Dbxref=GeneID:1451045;Name=MJ_RS01025;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS01025;old_locus_tag=MJ_t07%2CMJt07%2CtRNA-Pro-1
+431 ID=rna-MJ_RS01025;Parent=gene-MJ_RS01025;Dbxref=GeneID:1451045;anticodon=(pos:190867..190869);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01025;product=tRNA-Pro
+432 ID=exon-MJ_RS01025-1;Parent=rna-MJ_RS01025;Dbxref=GeneID:1451045;anticodon=(pos:190867..190869);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01025;product=tRNA-Pro
+###
+
+matches for intervals (215199, 215295)
+491 ID=gene-MJ_RS01175;Dbxref=GeneID:1451075;Name=MJ_RS01175;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS01175;old_locus_tag=MJ_t08%2CMJt08%2CtRNA-Leu-2
+492 ID=rna-MJ_RS01175;Parent=gene-MJ_RS01175;Dbxref=GeneID:1451075;anticodon=(pos:215246..215248);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01175;product=tRNA-Leu
+493 ID=exon-MJ_RS01175-1;Parent=rna-MJ_RS01175;Dbxref=GeneID:1451075;anticodon=(pos:215246..215248);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01175;product=tRNA-Leu
+###
+
+matches for intervals (227704, 227781)
+###
+
+matches for intervals (291971, 291996)
+###
+
+matches for intervals (303989, 304079)
+716 ID=gene-MJ_RS01720;Dbxref=GeneID:1451182;Name=MJ_RS01720;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS01720;old_locus_tag=MJ_t10%2CMJt10%2CtRNA-Ser-2
+717 ID=rna-MJ_RS01720;Parent=gene-MJ_RS01720;Dbxref=GeneID:1451182;anticodon=(pos:304028..304030);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01720;product=tRNA-Ser
+718 ID=exon-MJ_RS01720-1;Parent=rna-MJ_RS01720;Dbxref=GeneID:1451182;anticodon=(pos:304028..304030);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS01720;product=tRNA-Ser
+###
+
+matches for intervals (325028, 325095)
+###
+
+matches for intervals (358765, 358941)
+868 ID=gene-MJ_RS02090;Dbxref=GeneID:1451255;Name=MJ_RS02090;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS02090;old_locus_tag=MJ_t11%2CMJt11%2CtRNA-Arg-1
+869 ID=rna-MJ_RS02090;Parent=gene-MJ_RS02090;Dbxref=GeneID:1451255;anticodon=(pos:358803..358805);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS02090;product=tRNA-Arg
+870 ID=exon-MJ_RS02090-1;Parent=rna-MJ_RS02090;Dbxref=GeneID:1451255;anticodon=(pos:358803..358805);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS02090;product=tRNA-Arg
+871 ID=gene-MJ_RS02095;Dbxref=GeneID:1451256;Name=MJ_RS02095;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS02095;old_locus_tag=MJ_t12%2CMJt12%2CtRNA-Glu-1
+872 ID=rna-MJ_RS02095;Parent=gene-MJ_RS02095;Dbxref=GeneID:1451256;anticodon=(pos:358905..358907);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS02095;product=tRNA-Glu
+873 ID=exon-MJ_RS02095-1;Parent=rna-MJ_RS02095;Dbxref=GeneID:1451256;anticodon=(pos:358905..358907);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS02095;product=tRNA-Glu
+###
+
+matches for intervals (359973, 360045)
+###
+
+matches for intervals (402968, 403056)
+###
+
+matches for intervals (412581, 412634)
+###
+
+matches for intervals (552536, 552861)
+1363 ID=gene-MJ_RS03295;Dbxref=GeneID:27929964;Name=ffs;gbkey=Gene;gene=ffs;gene_biotype=SRP_RNA;locus_tag=MJ_RS03295
+1364 ID=rna-MJ_RS03295;Parent=gene-MJ_RS03295;Dbxref=RFAM:RF01857,GeneID:27929964;Note=archaeal-type;gbkey=ncRNA;gene=ffs;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03295;product=signal recognition particle sRNA
+1365 ID=exon-MJ_RS03295-1;Parent=rna-MJ_RS03295;Dbxref=RFAM:RF01857,GeneID:27929964;Note=archaeal-type;gbkey=ncRNA;gene=ffs;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03295;product=signal recognition particle sRNA
+###
+
+matches for intervals (619160, 619235)
+###
+
+matches for intervals (637578, 638152)
+1551 ID=gene-MJ_RS03745;Dbxref=GeneID:1451579;Name=MJ_RS03745;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03745;old_locus_tag=MJ_t16%2CMJt16%2CtRNA-Phe-1
+1552 ID=rna-MJ_RS03745;Parent=gene-MJ_RS03745;Dbxref=GeneID:1451579;anticodon=(pos:637617..637619);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03745;product=tRNA-Phe
+1553 ID=exon-MJ_RS03745-1;Parent=rna-MJ_RS03745;Dbxref=GeneID:1451579;anticodon=(pos:637617..637619);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03745;product=tRNA-Phe
+1554 ID=gene-MJ_RS03750;Dbxref=GeneID:1451580;Name=MJ_RS03750;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03750;old_locus_tag=MJ_t17%2CMJt17%2CtRNA-Asn-1
+1555 ID=rna-MJ_RS03750;Parent=gene-MJ_RS03750;Dbxref=GeneID:1451580;anticodon=(pos:637700..637702);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03750;product=tRNA-Asn
+1556 ID=exon-MJ_RS03750-1;Parent=rna-MJ_RS03750;Dbxref=GeneID:1451580;anticodon=(pos:637700..637702);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03750;product=tRNA-Asn
+1557 ID=gene-MJ_RS03755;Dbxref=GeneID:1451581;Name=MJ_RS03755;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03755;old_locus_tag=MJ_t18%2CMJt18%2CtRNA-Met-3
+1558 ID=rna-MJ_RS03755;Parent=gene-MJ_RS03755;Dbxref=GeneID:1451581;anticodon=(pos:637807..637809);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03755;product=tRNA-Ile
+1559 ID=exon-MJ_RS03755-1;Parent=rna-MJ_RS03755;Dbxref=GeneID:1451581;anticodon=(pos:637807..637809);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03755;product=tRNA-Ile
+1560 ID=gene-MJ_RS03760;Dbxref=GeneID:1451582;Name=MJ_RS03760;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03760;old_locus_tag=MJ_t19%2CMJt19%2CtRNA-Glu-2
+1561 ID=rna-MJ_RS03760;Parent=gene-MJ_RS03760;Dbxref=GeneID:1451582;anticodon=(pos:637904..637906);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03760;product=tRNA-Glu
+1562 ID=exon-MJ_RS03760-1;Parent=rna-MJ_RS03760;Dbxref=GeneID:1451582;anticodon=(pos:637904..637906);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03760;product=tRNA-Glu
+1563 ID=gene-MJ_RS03765;Dbxref=GeneID:1451583;Name=MJ_RS03765;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03765;old_locus_tag=MJ_t20%2CMJt20%2CtRNA-Leu-3
+1564 ID=rna-MJ_RS03765;Parent=gene-MJ_RS03765;Dbxref=GeneID:1451583;anticodon=(pos:638018..638020);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03765;product=tRNA-Leu
+1565 ID=exon-MJ_RS03765-1;Parent=rna-MJ_RS03765;Dbxref=GeneID:1451583;anticodon=(pos:638018..638020);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03765;product=tRNA-Leu
+1566 ID=gene-MJ_RS03770;Dbxref=GeneID:1451584;Name=MJ_RS03770;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03770;old_locus_tag=MJ_t21%2CMJt21%2CtRNA-His-1
+1567 ID=rna-MJ_RS03770;Parent=gene-MJ_RS03770;Dbxref=GeneID:1451584;anticodon=(pos:638114..638116);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03770;product=tRNA-His
+1568 ID=exon-MJ_RS03770-1;Parent=rna-MJ_RS03770;Dbxref=GeneID:1451584;anticodon=(pos:638114..638116);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03770;product=tRNA-His
+###
+
+matches for intervals (638333, 640131)
+1569 ID=gene-MJ_RS03775;Dbxref=GeneID:1451585;Name=MJ_RS03775;gbkey=Gene;gene_biotype=rRNA;locus_tag=MJ_RS03775;old_locus_tag=MJ_r03%2CMJr03%2CMJrrnB16S
+1570 ID=rna-MJ_RS03775;Parent=gene-MJ_RS03775;Dbxref=GeneID:1451585;gbkey=rRNA;locus_tag=MJ_RS03775;product=16S ribosomal RNA
+1571 ID=exon-MJ_RS03775-1;Parent=rna-MJ_RS03775;Dbxref=GeneID:1451585;gbkey=rRNA;locus_tag=MJ_RS03775;product=16S ribosomal RNA
+1572 ID=gene-MJ_RS03780;Dbxref=GeneID:1451586;Name=MJ_RS03780;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS03780;old_locus_tag=MJ_t22%2CMJt22%2CtRNA-Ala-3
+1573 ID=rna-MJ_RS03780;Parent=gene-MJ_RS03780;Dbxref=GeneID:1451586;anticodon=(pos:640028..640030);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03780;product=tRNA-Ala
+1574 ID=exon-MJ_RS03780-1;Parent=rna-MJ_RS03780;Dbxref=GeneID:1451586;anticodon=(pos:640028..640030);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS03780;product=tRNA-Ala
+###
+
+matches for intervals (640216, 643448)
+1575 ID=gene-MJ_RS03785;Dbxref=GeneID:1451587;Name=MJ_RS03785;gbkey=Gene;gene_biotype=rRNA;locus_tag=MJ_RS03785;old_locus_tag=MJ_r04%2CMJr04%2CMJrrnB23S
+1576 ID=rna-MJ_RS03785;Parent=gene-MJ_RS03785;Dbxref=GeneID:1451587;gbkey=rRNA;locus_tag=MJ_RS03785;product=23S ribosomal RNA
+1577 ID=exon-MJ_RS03785-1;Parent=rna-MJ_RS03785;Dbxref=GeneID:1451587;gbkey=rRNA;locus_tag=MJ_RS03785;product=23S ribosomal RNA
+1578 ID=gene-MJ_RS03790;Dbxref=GeneID:1451588;Name=rrf;gbkey=Gene;gene=rrf;gene_biotype=rRNA;locus_tag=MJ_RS03790;old_locus_tag=MJ_r05%2CMJr05%2CMJrrnB5S
+1579 ID=rna-MJ_RS03790;Parent=gene-MJ_RS03790;Dbxref=RFAM:RF00001,GeneID:1451588;gbkey=rRNA;gene=rrf;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03790;product=5S ribosomal RNA
+1580 ID=exon-MJ_RS03790-1;Parent=rna-MJ_RS03790;Dbxref=RFAM:RF00001,GeneID:1451588;gbkey=rRNA;gene=rrf;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03790;product=5S ribosomal RNA
+###
+
+matches for intervals (643499, 643766)
+1581 ID=gene-MJ_RS03795;Dbxref=GeneID:27929965;Name=rnpB;gbkey=Gene;gene=rnpB;gene_biotype=RNase_P_RNA;locus_tag=MJ_RS03795
+1582 ID=rna-MJ_RS03795;Parent=gene-MJ_RS03795;Dbxref=RFAM:RF00373,GeneID:27929965;Note=archaeal type;gbkey=ncRNA;gene=rnpB;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03795;product=RNase P RNA component
+1583 ID=exon-MJ_RS03795-1;Parent=rna-MJ_RS03795;Dbxref=RFAM:RF00373,GeneID:27929965;Note=archaeal type;gbkey=ncRNA;gene=rnpB;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS03795;product=RNase P RNA component
+###
+
+matches for intervals (763766, 763844)
+###
+
+matches for intervals (764021, 764094)
+###
+
+matches for intervals (774707, 774787)
+###
+
+matches for intervals (862589, 862662)
+2073 ID=gene-MJ_RS04995;Dbxref=GeneID:1451822;Name=MJ_RS04995;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS04995;old_locus_tag=MJ_t25%2CMJt25%2CtRNA-Arg-2
+2074 ID=rna-MJ_RS04995;Parent=gene-MJ_RS04995;Dbxref=GeneID:1451822;anticodon=(pos:862623..862625);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS04995;product=tRNA-Arg
+2075 ID=exon-MJ_RS04995-1;Parent=rna-MJ_RS04995;Dbxref=GeneID:1451822;anticodon=(pos:862623..862625);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS04995;product=tRNA-Arg
+###
+
+matches for intervals (863475, 864150)
+2078 ID=gene-MJ_RS05005;Dbxref=GeneID:1451824;Name=MJ_RS05005;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05005;old_locus_tag=MJ_t26%2CMJt26%2CtRNA-Thr-2
+2079 ID=rna-MJ_RS05005;Parent=gene-MJ_RS05005;Dbxref=GeneID:1451824;anticodon=(pos:863513..863515);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05005;product=tRNA-Thr
+2080 ID=exon-MJ_RS05005-1;Parent=rna-MJ_RS05005;Dbxref=GeneID:1451824;anticodon=(pos:863513..863515);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05005;product=tRNA-Thr
+2081 ID=gene-MJ_RS05010;Dbxref=GeneID:1451825;Name=MJ_RS05010;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05010;old_locus_tag=MJ_t27%2CMJt27%2CtRNA-Pro-2
+2082 ID=rna-MJ_RS05010;Parent=gene-MJ_RS05010;Dbxref=GeneID:1451825;anticodon=(pos:863606..863608);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05010;product=tRNA-Pro
+2083 ID=exon-MJ_RS05010-1;Parent=rna-MJ_RS05010;Dbxref=GeneID:1451825;anticodon=(pos:863606..863608);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05010;product=tRNA-Pro
+2084 ID=gene-MJ_RS05015;Dbxref=GeneID:1451826;Name=MJ_RS05015;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05015;old_locus_tag=MJ_t28%2CMJt28%2CtRNA-Tyr-1
+2085 ID=rna-MJ_RS05015;Parent=gene-MJ_RS05015;Dbxref=GeneID:1451826;anticodon=(pos:863690..863692);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05015;product=tRNA-Tyr
+2086 ID=exon-MJ_RS05015-1;Parent=rna-MJ_RS05015;Dbxref=GeneID:1451826;anticodon=(pos:863690..863692);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05015;product=tRNA-Tyr
+2087 ID=gene-MJ_RS05020;Dbxref=GeneID:1451827;Name=MJ_RS05020;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05020;old_locus_tag=MJ_t29%2CMJt29%2CtRNA-Lys-1
+2088 ID=rna-MJ_RS05020;Parent=gene-MJ_RS05020;Dbxref=GeneID:1451827;anticodon=(pos:863850..863852);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05020;product=tRNA-Lys
+2089 ID=exon-MJ_RS05020-1;Parent=rna-MJ_RS05020;Dbxref=GeneID:1451827;anticodon=(pos:863850..863852);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05020;product=tRNA-Lys
+2090 ID=gene-MJ_RS05025;Dbxref=GeneID:1451828;Name=rrf;gbkey=Gene;gene=rrf;gene_biotype=rRNA;locus_tag=MJ_RS05025;old_locus_tag=MJ_r06%2CMJr06%2CMJrrnA5S
+2091 ID=rna-MJ_RS05025;Parent=gene-MJ_RS05025;Dbxref=RFAM:RF00001,GeneID:1451828;gbkey=rRNA;gene=rrf;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS05025;product=5S ribosomal RNA
+2092 ID=exon-MJ_RS05025-1;Parent=rna-MJ_RS05025;Dbxref=RFAM:RF00001,GeneID:1451828;gbkey=rRNA;gene=rrf;inference=COORDINATES: profile:INFERNAL:1.1.1;locus_tag=MJ_RS05025;product=5S ribosomal RNA
+2093 ID=gene-MJ_RS05030;Dbxref=GeneID:1451829;Name=MJ_RS05030;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05030;old_locus_tag=MJ_t30%2CMJt30%2CtRNA-Asp-1
+2094 ID=rna-MJ_RS05030;Parent=gene-MJ_RS05030;Dbxref=GeneID:1451829;anticodon=(pos:864100..864102);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05030;product=tRNA-Asp
+2095 ID=exon-MJ_RS05030-1;Parent=rna-MJ_RS05030;Dbxref=GeneID:1451829;anticodon=(pos:864100..864102);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05030;product=tRNA-Asp
+###
+
+matches for intervals (873578, 873777)
+2114 ID=gene-MJ_RS05080;Dbxref=GeneID:1451839;Name=MJ_RS05080;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05080;old_locus_tag=MJ_t31%2CMJt31%2CtRNA-Ile-1
+2115 ID=rna-MJ_RS05080;Parent=gene-MJ_RS05080;Dbxref=GeneID:1451839;anticodon=(pos:complement(873726..873728));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05080;product=tRNA-Ile
+2116 ID=exon-MJ_RS05080-1;Parent=rna-MJ_RS05080;Dbxref=GeneID:1451839;anticodon=(pos:complement(873726..873728));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05080;product=tRNA-Ile
+###
+
+matches for intervals (883674, 883754)
+2135 ID=gene-MJ_RS05130;Dbxref=GeneID:1451849;Name=MJ_RS05130;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05130;old_locus_tag=MJ_t32%2CMJt32%2CtRNA-Val-3
+2136 ID=rna-MJ_RS05130;Parent=gene-MJ_RS05130;Dbxref=GeneID:1451849;anticodon=(pos:883715..883717);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05130;product=tRNA-Val
+2137 ID=exon-MJ_RS05130-1;Parent=rna-MJ_RS05130;Dbxref=GeneID:1451849;anticodon=(pos:883715..883717);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05130;product=tRNA-Val
+###
+
+matches for intervals (951851, 951967)
+2282 ID=gene-MJ_RS05490;Dbxref=GeneID:1451919;Name=MJ_RS05490;gbkey=Gene;gene_biotype=protein_coding;locus_tag=MJ_RS05490;old_locus_tag=MJ1022%2CMJ_1022
+2283 ID=cds-WP_010870535.1;Parent=gene-MJ_RS05490;Dbxref=Genbank:WP_010870535.1,GeneID:1451919;Name=WP_010870535.1;gbkey=CDS;inference=COORDINATES: similar to AA sequence:RefSeq:WP_010870535.1;locus_tag=MJ_RS05490;product=DUF5591 domain-containg protein;protein_id=WP_010870535.1;transl_table=11
+###
+
+matches for intervals (1038543, 1038621)
+2437 ID=gene-MJ_RS05875;Dbxref=GeneID:1451994;Name=MJ_RS05875;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS05875;old_locus_tag=MJ_t33%2CMJt33%2CtRNA-Arg-3
+2438 ID=rna-MJ_RS05875;Parent=gene-MJ_RS05875;Dbxref=GeneID:1451994;anticodon=(pos:complement(1038583..1038585));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05875;product=tRNA-Arg
+2439 ID=exon-MJ_RS05875-1;Parent=rna-MJ_RS05875;Dbxref=GeneID:1451994;anticodon=(pos:complement(1038583..1038585));gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS05875;product=tRNA-Arg
+2440 ID=gene-MJ_RS05880;Dbxref=GeneID:1451995;Name=MJ_RS05880;gbkey=Gene;gene_biotype=protein_coding;locus_tag=MJ_RS05880;old_locus_tag=MJ1098%2CMJ_1098
+2441 ID=cds-WP_010870610.1;Parent=gene-MJ_RS05880;Dbxref=Genbank:WP_010870610.1,GeneID:1451995;Name=WP_010870610.1;gbkey=CDS;inference=COORDINATES: protein motif:HMM:NF015141.1;locus_tag=MJ_RS05880;product=hypothetical protein;protein_id=WP_010870610.1;transl_table=11
+###
+
+matches for intervals (1129123, 1129193)
+###
+
+matches for intervals (1150141, 1150401)
+2671 ID=gene-MJ_RS06445;Dbxref=GeneID:1452102;Name=MJ_RS06445;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS06445;old_locus_tag=MJ_t34%2CMJt34%2CtRNA-Gly-1
+2672 ID=rna-MJ_RS06445;Parent=gene-MJ_RS06445;Dbxref=GeneID:1452102;anticodon=(pos:1150179..1150181);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06445;product=tRNA-Gly
+2673 ID=exon-MJ_RS06445-1;Parent=rna-MJ_RS06445;Dbxref=GeneID:1452102;anticodon=(pos:1150179..1150181);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06445;product=tRNA-Gly
+2674 ID=gene-MJ_RS06450;Dbxref=GeneID:1452103;Name=MJ_RS06450;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS06450;old_locus_tag=MJ_t35%2CMJt35%2CtRNA-Gly-2
+2675 ID=rna-MJ_RS06450;Parent=gene-MJ_RS06450;Dbxref=GeneID:1452103;anticodon=(pos:1150289..1150291);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06450;product=tRNA-Gly
+2676 ID=exon-MJ_RS06450-1;Parent=rna-MJ_RS06450;Dbxref=GeneID:1452103;anticodon=(pos:1150289..1150291);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06450;product=tRNA-Gly
+###
+
+matches for intervals (1189942, 1190053)
+2763 ID=gene-MJ_RS06665;Dbxref=GeneID:1452143;Name=MJ_RS06665;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS06665;old_locus_tag=MJ_t36%2CMJt36%2CtRNA-Trp-1
+2764 ID=rna-MJ_RS06665;Parent=gene-MJ_RS06665;Dbxref=GeneID:1452143;anticodon=(pos:1189981..1189983);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06665;product=tRNA-Trp
+2765 ID=exon-MJ_RS06665-1;Parent=rna-MJ_RS06665;Dbxref=GeneID:1452143;anticodon=(pos:1189981..1189983);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06665;product=tRNA-Trp
+2766 ID=exon-MJ_RS06665-2;Parent=rna-MJ_RS06665;Dbxref=GeneID:1452143;anticodon=(pos:1189981..1189983);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS06665;product=tRNA-Trp
+###
+
+matches for intervals (1313164, 1313250)
+3021 ID=gene-MJ_RS07295;Dbxref=GeneID:1452267;Name=MJ_RS07295;gbkey=Gene;gene_biotype=tRNA;locus_tag=MJ_RS07295;old_locus_tag=MJ_t37%2CMJt37%2CtRNA-Ser-3
+3022 ID=rna-MJ_RS07295;Parent=gene-MJ_RS07295;Dbxref=GeneID:1452267;anticodon=(pos:1313199..1313201);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS07295;product=tRNA-Ser
+3023 ID=exon-MJ_RS07295-1;Parent=rna-MJ_RS07295;Dbxref=GeneID:1452267;anticodon=(pos:1313199..1313201);gbkey=tRNA;inference=COORDINATES: profile:tRNAscan-SE:2.0.4;locus_tag=MJ_RS07295;product=tRNA-Ser
+###
+
+matches for intervals (1553922, 1553982)
+###
+
+matches for intervals (1659450, 1659519)
+###
+
