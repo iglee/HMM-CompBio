@@ -53,7 +53,7 @@ for x in h.intervals:
             y = (int(row[1][3])-1, int(row[1][4])-1)
             if match(x,y):
                 
-                print(row[0], y, row[1][8])
+                print(row[0], y, row[1])
                 print(row[0], y, row[1][8], file = out_file)
         except:
             #print("can't match, bad input",row[0])
