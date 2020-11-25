@@ -128,11 +128,13 @@ class HMM:
             hit_intervals.append((group[0][1],group[-1][1]))
         self.intervals = hit_intervals
 
-    def print_report(self):
+    def print_report(self, file):
         # print emission probabilities
         emit_table = [list(self.emit_proba[0]), list(self.emit_proba[1])]
         emit_table[0].insert(0, "State 1")
         emit_table[1].insert(0, "State 2")
+        print("\nEmission probabilities:\n", file=file)
+        print(tabulate(emit_table, headers=['A', 'C', 'G', 'T']), file=file)
         print("\nEmission probabilities:\n")
         print(tabulate(emit_table, headers=['A', 'C', 'G', 'T']))
 
@@ -140,23 +142,33 @@ class HMM:
         transmit_table = [list(self.trans_proba[0]), list(self.trans_proba[1])]
         transmit_table[0].insert(0, "State 1")
         transmit_table[1].insert(0, "State 2")
+        print("\n\nTransmission probabilities:\n", file=file)
+        print(tabulate(transmit_table, headers=["State 1", "State 2"]), file=file)
         print("\n\nTransmission probabilities:\n")
         print(tabulate(transmit_table, headers=["State 1", "State 2"]))
 
         # print log probability of viterbi path
         logproba_path = self.viterbi_trellis[:,-1].max()
+        print("\n\nLog probability of the viterbi path: ", logproba_path, file=file)
         print("\n\nLog probability of the viterbi path: ", logproba_path)
 
         # print total number of hits
+        print("\n\nTotal number of hits: ", len(self.intervals), file=file)
         print("\n\nTotal number of hits: ", len(self.intervals))
 
         # print length and locations of first k hits
         k_intervals = self.intervals[:self.k]
+        print("\n\nLengths and locations of first {} hits".format(self.k), file=file)
         print("\n\nLengths and locations of first {} hits".format(self.k))
         for x in k_intervals:
+            print("Interval location: ", x, file=file)
+            print("Interval length: ", x[1]-x[0], file=file)
+            print("\n", file=file)
+
             print("Interval location: ", x)
             print("Interval length: ", x[1]-x[0])
             print("\n")
-        
+
+        print("\n\n\n", file=file)
         print("\n\n\n")
 

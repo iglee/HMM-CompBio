@@ -18,19 +18,24 @@ args = parser.parse_args()
 # input file
 input_data = read_fna(args.fi)
 
+# output file
+out_file = open(args.fo, "w")
+
 # load model
 h = HMM()
 h.input_sequence(input_data[0].sequence)
 h.viterbi()
 h.backtrace()
+print("#########################\n Training Iteration 1: \n#########################", file=out_file)
 print("#########################\n Training Iteration 1: \n#########################")
-h.print_report()
+h.print_report(out_file)
 
 # run viterbi training on the model 
 for i in range(1,N):
     h = vt_train(h)
+    print("\n\n#########################\n Training Iteration {}: \n#########################".format(i+1),file=out_file)
     print("\n\n#########################\n Training Iteration {}: \n#########################".format(i+1))
-    h.print_report()
+    h.print_report(out_file)
 
-
+out_file.close()
 
